@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Pita Pitstop</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Pita Pitstop</div>
+        <div class="menu">
+          <a href="#">Home</a>
+          <a href="#">Menu</a>
+          <a href="#">Over Ons</a>
+          <a href="#">Contact</a>
+          <a href="#">Bestellen</a>
+          <a href="#">Winkelwagen</a>
+          <a href="#">Inloggen</a>
+        </div>
+        <div class="hamburger-menu">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <h2>Ontdek onze heerlijke gerechten</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <div class="menu-item-content">
+                    <h3>Frietjes</h3>
+                    <p>Krokante frietjes geserveerd met een saus naar keuze. Heerlijk knapperig en goudbruin gebakken, bereid van verse aardappelen.</p>
+                </div>
+                <div class="menu-item-image">
+                    <img src="Afbeeldingen/frietjes.jpg" alt="Frietjes">
+                </div>
+                <button class="buy-button">Koop</button>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-content">
+                    <h3>Menu's</h3>
+                    <p>Kies uit onze diverse menu's, inclusief frietjes en een drankje. Onze menu's bieden een combinatie van smaken en keuzes die perfect zijn voor elke trek.</p>
+                </div>
+                <div class="menu-item-image">
+                    <img src="Afbeeldingen/menu.jpg" alt="Menu's">
+                </div>
+                <button class="buy-button">Koop</button>
+            </div>
+            <div class="menu-item" id="broodjeItem">
+                <div class="menu-item-content">
+                    <h3>Broodje Kip</h3>
+                    <p>Heerlijk vers bereid broodje met sappige kip, knapperige sla, plakjes tomaat en een vleugje mayonaise. Een smakelijke traktatie voor elk moment van de dag.</p>
+                    <button onclick="changeBroodje()">Verander naar Broodje Vlees</button>
+                </div>
+                <div class="menu-item-image">
+                    <img src="Afbeeldingen/broodje_kip.jpg" alt="Broodje Kip">
+                </div>
+                <button class="buy-button">Koop</button>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-content">
+                    <h3>Nuggets</h3>
+                    <p>Knapperige nuggets, perfect als snack of als onderdeel van een menu. Gemaakt van hoogwaardige ingrediënten en gebakken tot in de perfectie, elke hap is een genot voor de smaakpapillen.</p>
+                </div>
+                <div class="menu-item-image">
+                    <img src="Afbeeldingen/nuggets.png" alt="Nuggets">
+                </div>
+                <button class="buy-button">Koop</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="footer-section">
+            <h3>Over ons</h3>
+            <p>Wat meer informatie over ons bedrijf...</p>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Contactgegevens...</p>
+        </div>
+        <div class="footer-section">
+            <h3>Social Media</h3>
+            <ul class="social-media-links">
+                <li><a href="https://icons.getbootstrap.com/icons/instagram/"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="https://icons.getbootstrap.com/icons/instagram/"><i class="bi bi-twitter"></i></a></li>
+                <li><a href="https://icons.getbootstrap.com/icons/instagram/"><i class="bi bi-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>    
+      
+    
+<!--
+                                                                                                   Javascript voor het veranderen van broodje
+ -->
+      <script>
+    function changeBroodje() {
+        const broodjeElement = document.getElementById('broodjeItem');
+        const imgElement = broodjeElement.querySelector('img');
+        const buttonElement = broodjeElement.querySelector('button');
+
+        if (imgElement.src.endsWith('kip.jpg')) {
+            imgElement.src = 'Afbeeldingen/broodje_vlees.jpg';
+            broodjeElement.querySelector('h3').innerText = 'Broodje Vlees';
+            broodjeElement.querySelector('p').innerText = 'Heerlijk vers bereid broodje met mals vlees. ' +
+                'Knapperige sla, plakjes tomaat en een vleugje mayonaise. Een smakelijke traktatie voor elk moment van de dag.';
+            buttonElement.innerText = 'Verander naar Broodje Kip';
+        } else {
+            imgElement.src = 'Afbeeldingen/broodje_kip.jpg';
+            broodjeElement.querySelector('h3').innerText = 'Broodje Kip';
+            broodjeElement.querySelector('p').innerText = 'Heerlijk vers bereid broodje met sappige kip, ' +
+                'knapperige sla, plakjes tomaat en een vleugje mayonaise. Een smakelijke traktatie voor elk moment van de dag.';
+            buttonElement.innerText = 'Verander naar Broodje Vlees';
+        }
+    }
+
+      </script>
+</body>
+</html>
