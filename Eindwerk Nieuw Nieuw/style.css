@@ -18,7 +18,7 @@ body {
 .logo {
     font-size: 24px;
     font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Nieuwe lettertype */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
 /* --------------------------------------------------------------Menu */
@@ -30,7 +30,7 @@ body {
     color: #fff;
     text-decoration: none;
     margin-left: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Nieuwe lettertype */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
 .menu a:hover {
@@ -83,7 +83,7 @@ body {
 
 .menu-item h3, .menu-item p {
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Nieuwe lettertype */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
 /* ------------------------------------------------- afbeelding */
@@ -95,14 +95,12 @@ body {
 
 /* ------------------------------------------------------------ Footer */
 .footer {
-    background-color: #673AB7; /* Levendig paars */
+    background-color: #673AB7; 
     color: #fff;
     padding: 20px;
     text-align: center;
     width: 100%;
-    z-index: 1000; /* Zorg ervoor dat de footer bovenaan blijft */
     position: relative; /* Relatieve positionering */
-    margin-top: -100px; /* Verplaats de footer omhoog */
 }
 
 
@@ -144,14 +142,14 @@ body {
     }
 
     .hamburger-menu {
-        display: flex; /* Toon het hamburgermenu */
+        display: flex; /* Tonen hamburgermenu */
     }
 
     .menu-items {
-        flex-direction: column; /* Stapel menu-items op voor kleine schermen */
+        flex-direction: column; /* Stapel menu-items */
     }
 
     .menu-item {
-        width: 100%; /* Neem de volledige breedte in voor kleine schermen */
+        width: 100%;
     }
 }
