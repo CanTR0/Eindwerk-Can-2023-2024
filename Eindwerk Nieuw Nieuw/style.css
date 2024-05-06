@@ -24,6 +24,7 @@ body {
 /* --------------------------------------------------------------Menu */
 .menu {
     display: flex;
+    
 }
 
 .menu a {
@@ -31,10 +32,16 @@ body {
     text-decoration: none;
     margin-left: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    border-radius: 5vw !important;
+    transition: 0.5s;
+    cursor: pointer;
+
 }
 
 .menu a:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    box-shadow: 1px -1px 51px -6px #44bd4e;
+    margin-top: 5px;
 }
 
 /* ----------------------------------------------------------------Hamburger menu */
