@@ -1,12 +1,12 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #e1bee7;
+    background-color: #bfbee7;
 }
 
 /* ---------------------------------------------------------------Header */
 .header {
-    background-color: #673AB7; 
+    background-color: #3a62b7;
     color: #fff;
     padding: 20px;
     display: flex;
@@ -95,7 +95,7 @@ body {
 
 /* ------------------------------------------------------------ Footer */
 .footer {
-    background-color: #673AB7; 
+    background-color: #3a62b7; 
     color: #fff;
     padding: 20px;
     text-align: center;
