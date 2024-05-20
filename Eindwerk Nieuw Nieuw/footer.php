@@ -11,26 +11,7 @@
 	   <!-- Voeg ook logo toe -->
         
     </head>
-<body>
-<div class="footer">
-        <div class="footer-section">
-            <h3>Over ons</h3>
-            <p>Wat meer informatie over ons bedrijf...</p>
-        </div>
-        <div class="footer-section">
-            <h3>Contact</h3>
-            <p>Contactgegevens...</p>
-        </div>
-        <div class="footer-section">
-            <h3>Social Media</h3>
-            <ul class="social-media-links">
-                <li><a href="https://icons.getbootstrap.com/icons/instagram/"><i class="bi bi-facebook"></i></a></li>
-                <li><a href="https://icons.getbootstrap.com/icons/instagram/"><i class="bi bi-twitter"></i></a></li>
-                <li><a href="https://icons.getbootstrap.com/icons/instagram/"><i class="bi bi-instagram"></i></a></li>
-            </ul>
-        </div>
-    </div> 
-	
+
     
 </body>
-</html>
+</html> 
