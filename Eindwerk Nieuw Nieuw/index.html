@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- Open in default browser vs Open in usbWebserver browser, vragen aan leerkracht op school. -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,11 +15,11 @@
         
         <div class="Navbar">
             <a href="index.html">Home</a>
-            <a href="#NaarMenu">Menu</a> <!--Bij drukken pagina scrollt naar beneden, bovenaan staat een foto-->
-            <a href="#">Over Ons</a>
-            <a href="#">Contact</a>
-            <a href="#">Bestellen</a>
-            <a href="#">Winkelwagen</a>
+            <a href="#NaarMenu">Menu</a> <!-- Zou naar beneden moeten scrollen, weet niet waarom het niet doet..-->
+            <a href="About.html">Over Ons</a>
+            <a href="Contact.html">Contact</a>
+            <a href="#NaarMenu">Bestellen</a><!-- Zou naar beneden moeten scrollen, weet niet waarom het niet doet..-->
+            <a href="Winkelwagen.html">Winkelwagen</a>
             <a href="signupForm.php">SignUp</a>
         </div>
 
@@ -29,61 +30,75 @@
         </div>
     </div>
 
-    <!--                                               Inhoud van Home                                    -->
+    <!-- Na verkleinen dit terug zichtbaar maken -->
+    <div class="Navbar-Klein">
+        <a href="index.html">Home</a>
+        <a href="#NaarMenu">Menu</a> <!-- Zou naar beneden moeten scrollen, weet niet waarom het niet doet..-->
+        <a href="About.html">Over Ons</a>
+        <a href="Contact.html">Contact</a>
+        <a href="#NaarMenu">Bestellen</a><!-- Zou naar beneden moeten scrollen, weet niet waarom het niet doet..-->
+        <a href="Winkelwagen.html">Winkelwagen</a>
+        <a href="signupForm.php">SignUp</a>
+    </div>
+
+    <div class="alles">
+        <!--                                               Inhoud van Home                                    -->
     
-    <section class="content-home" id="Home">
-        <h1>Welkom in Pita Pitstop.</h1>
+        <div class="content-home">
+            <h1>Welkom bij Pita Pitstop</h1>
+        </div>
+
         
-    </section>
-    
-    <!--                                               Inhoud van Menu                                    -->
-    <div class="content-menu">
-        <h2 id="#NaarMenu">Ontdek onze heerlijke gerechten</h2>
-        <div class="menu-items">
-            <div class="menu-item">
-                <div class="menu-item-content">
-                    <h3>Frietjes</h3>
-                    <p>Krokante frietjes geserveerd met een saus naar keuze. Heerlijk knapperig en goudbruin gebakken, bereid van verse aardappelen.</p>
+        <!--                                               Inhoud van Menu                                    -->
+        <div class="content-menu" id="NaarMenu">
+            <h2 >Ontdek onze heerlijke gerechten</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <h3>Frietjes</h3>
+                        <p>Krokante frietjes geserveerd met een saus naar keuze. Heerlijk knapperig en goudbruin gebakken, bereid van verse aardappelen.</p>
+                    </div>
+                    <div class="menu-item-image">
+                        <img src="Afbeeldingen/frietjes.jpg" alt="Frietjes">
+                    </div>
+                    <button class="buy-button">Koop</button>
                 </div>
-                <div class="menu-item-image">
-                    <img src="Afbeeldingen/frietjes.jpg" alt="Frietjes">
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <h3>Menu's</h3>
+                        <p>Kies uit onze diverse menu's, inclusief frietjes en een drankje. Onze menu's bieden een combinatie van smaken en keuzes die perfect zijn voor elke trek.</p>
+                    </div>
+                    <div class="menu-item-image">
+                        <img src="Afbeeldingen/menu.jpg" alt="Menu's">
+                    </div>
+                    <button class="buy-button">Koop</button>
                 </div>
-                <button class="buy-button">Koop</button>
-            </div>
-            <div class="menu-item">
-                <div class="menu-item-content">
-                    <h3>Menu's</h3>
-                    <p>Kies uit onze diverse menu's, inclusief frietjes en een drankje. Onze menu's bieden een combinatie van smaken en keuzes die perfect zijn voor elke trek.</p>
+                <div class="menu-item" id="broodjeItem">
+                    <div class="menu-item-content">
+                        <h3>Broodje Kip</h3>
+                        <p>Heerlijk vers bereid broodje met sappige kip, knapperige sla, plakjes tomaat en een vleugje mayonaise. Een smakelijke traktatie voor elk moment van de dag.</p>
+                        <br><button onclick="changeBroodje()">Klik voor Broodje Vlees</button>
+                    </div>
+                    <div class="menu-item-image">
+                        <img src="Afbeeldingen/broodje_kip.jpg" alt="Broodje Kip">
+                    </div>
+                    <button class="buy-button">Koop</button>
                 </div>
-                <div class="menu-item-image">
-                    <img src="Afbeeldingen/menu.jpg" alt="Menu's">
+                <div class="menu-item">
+                    <div class="menu-item-content">
+                        <h3>Nuggets</h3>
+                        <p>Knapperige nuggets, perfect als snack of als onderdeel van een menu. Gemaakt van hoogwaardige ingrediënten en gebakken tot in de perfectie, elke hap is een genot voor de smaakpapillen.</p>
+                    </div>
+                    <div class="menu-item-image">
+                        <img src="Afbeeldingen/nuggets.png" alt="Nuggets">
+                    </div>
+                    <button class="buy-button">Koop</button>
                 </div>
-                <button class="buy-button">Koop</button>
-            </div>
-            <div class="menu-item" id="broodjeItem">
-                <div class="menu-item-content">
-                    <h3>Broodje Kip</h3>
-                    <p>Heerlijk vers bereid broodje met sappige kip, knapperige sla, plakjes tomaat en een vleugje mayonaise. Een smakelijke traktatie voor elk moment van de dag.</p>
-                    <br><button onclick="changeBroodje()">Klik voor Broodje Vlees</button>
-                </div>
-                <div class="menu-item-image">
-                    <img src="Afbeeldingen/broodje_kip.jpg" alt="Broodje Kip">
-                </div>
-                <button class="buy-button">Koop</button>
-            </div>
-            <div class="menu-item">
-                <div class="menu-item-content">
-                    <h3>Nuggets</h3>
-                    <p>Knapperige nuggets, perfect als snack of als onderdeel van een menu. Gemaakt van hoogwaardige ingrediënten en gebakken tot in de perfectie, elke hap is een genot voor de smaakpapillen.</p>
-                </div>
-                <div class="menu-item-image">
-                    <img src="Afbeeldingen/nuggets.png" alt="Nuggets">
-                </div>
-                <button class="buy-button">Koop</button>
             </div>
         </div>
     </div>
     
+    <!--                                                           Footer                           -->
     <div class="footer">
         <div class="footer-section">
             <h3>Over ons</h3>
@@ -106,6 +121,7 @@
     
 <!--                                                               Javascript voor het veranderen van broodje                 -->
       
+
       <script>
     function changeBroodje() {
         const broodjeElement = document.getElementById('broodjeItem');

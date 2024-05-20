@@ -1,8 +1,8 @@
 body {
     margin: 0;
-    padding-left: 3px;
     font-family: Arial, sans-serif;
     background-color: #bfbee7;
+    scroll-behavior: smooth;
 }
 
 /* ---------------------------------------------------------------Header */
@@ -45,6 +45,37 @@ body {
     margin-top: 5px;
 }
 
+/* ---------------------------------Kleine navbar */
+.Navbar-Klein{
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    background-color: #3a62b7ca;
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 5px;
+
+}
+.Navbar-Klein a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    border-radius: 5vw !important;
+    transition: 0.5s;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 2%;
+}
+.Navbar-Klein a:hover {
+    /* text-decoration: underline; */
+    box-shadow: 1px -1px 51px -6px #15353d;
+    margin-top: 5px;
+}
+
+/* -----------------------------------------------------------------------------------------Inhoud Index */
+.alles{
+    padding-left: 3px;
+}
 /* ----------------------------------------------------------------Hamburger menu */
 .hamburger-menu {
     display: none;
@@ -70,6 +101,7 @@ body {
 .content-home h1{
     text-align: center;
 }
+
 
 /* -------------------------------------------------------------------Inhoud Menu */
 .content-menu {
@@ -162,8 +194,11 @@ body {
 
 /* -----------------------------------------------------Responsive maken */
 @media (max-width: 768px) {
-    .menu {
+    .Navbar {
         display: none; /* Verberg het menu */
+    }
+    .Navbar-Klein{
+        display: flex;
     }
 
     .hamburger-menu {
