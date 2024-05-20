@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding-left: 3px;
     font-family: Arial, sans-serif;
     background-color: #bfbee7;
 }
@@ -59,11 +60,22 @@ body {
     height: 2px;
     background-color: #fff;
 }
+/* -------------------------------------------------------------------Inhoud Home */
+.content-home {
+    margin-top: 5%;
+    padding: 20px;
+    margin-bottom: 100px;
+    margin-left: 3px;
+}
+.content-home h1{
+    text-align: center;
+}
 
-/* -------------------------------------------------------------------Inhoud */
+/* -------------------------------------------------------------------Inhoud Menu */
 .content-menu {
     padding: 20px;
     margin-bottom: 100px;
+    margin-left: 3px;
 }
 .content-menu button{
     background-color: #3a62b7;
