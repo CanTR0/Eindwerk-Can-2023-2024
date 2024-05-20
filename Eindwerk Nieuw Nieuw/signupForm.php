@@ -13,14 +13,6 @@ if (isset($_SESSION["user"]))
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PitaPitstop Signup</title>  
-    
-
-    
-
-
-	
-	
-
 </head>
 <body>
     

@@ -13,15 +13,12 @@ if (isset($_SESSION["user"]))
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PitaPitstop Login</title>
-    
-    
 </head>
 <body>
     
     <?php
     include_once("navbar.php");
     ?> 
-    <br><br><br><br>
     <div class="row">
             <h1 style="text-align: center;">Log in</h1>
         </div>
