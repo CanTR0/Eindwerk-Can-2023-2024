@@ -11,24 +11,26 @@
 <body>
     <div class="header">
         <div class="logo">Pita Pitstop</div>
-        <div class="menu">
-          <a href="#">Home</a>
-          <a href="#">Menu</a> <!--Bij drukken pagina scrollt naar beneden, bovenaan staat een foto-->
-          <a href="#">Over Ons</a>
-          <a href="#">Contact</a>
-          <a href="#">Bestellen</a>
-          <a href="#">Winkelwagen</a>
-          <a href="#">Inloggen</a>
+        
+        <div class="Navbar">
+            <a href="index.html">Home</a>
+            <a href="#NaarMenu">Menu</a> <!--Bij drukken pagina scrollt naar beneden, bovenaan staat een foto-->
+            <a href="#">Over Ons</a>
+            <a href="#">Contact</a>
+            <a href="#">Bestellen</a>
+            <a href="#">Winkelwagen</a>
+            <a href="#">Inloggen</a>
         </div>
         <div class="hamburger-menu">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
     </div>
     
-    <div class="content">
-        <h2>Ontdek onze heerlijke gerechten</h2>
+    <!--                                               Inhoud van Menu                                    -->
+    <div class="content-menu">
+        <h2 id="#NaarMenu">Ontdek onze heerlijke gerechten</h2>
         <div class="menu-items">
             <div class="menu-item">
                 <div class="menu-item-content">
@@ -54,7 +56,7 @@
                 <div class="menu-item-content">
                     <h3>Broodje Kip</h3>
                     <p>Heerlijk vers bereid broodje met sappige kip, knapperige sla, plakjes tomaat en een vleugje mayonaise. Een smakelijke traktatie voor elk moment van de dag.</p>
-                    <button onclick="changeBroodje()">Verander naar Broodje Vlees</button>
+                    <br><button onclick="changeBroodje()">Klik voor Broodje Vlees</button>
                 </div>
                 <div class="menu-item-image">
                     <img src="Afbeeldingen/broodje_kip.jpg" alt="Broodje Kip">
@@ -108,13 +110,13 @@
             broodjeElement.querySelector('h3').innerText = 'Broodje Vlees';
             broodjeElement.querySelector('p').innerText = 'Heerlijk vers bereid broodje met mals vlees. ' +
                 'Knapperige sla, plakjes tomaat en een vleugje mayonaise. Een smakelijke traktatie voor elk moment van de dag.';
-            buttonElement.innerText = 'Verander naar Broodje Kip';
+            buttonElement.innerText = 'Liever Broodje Kip?';
         } else {
             imgElement.src = 'Afbeeldingen/broodje_kip.jpg';
             broodjeElement.querySelector('h3').innerText = 'Broodje Kip';
             broodjeElement.querySelector('p').innerText = 'Heerlijk vers bereid broodje met sappige kip, ' +
                 'knapperige sla, plakjes tomaat en een vleugje mayonaise. Een smakelijke traktatie voor elk moment van de dag.';
-            buttonElement.innerText = 'Verander naar Broodje Vlees';
+            buttonElement.innerText = 'Toch Broodje Vlees?';
         }
     }
 
