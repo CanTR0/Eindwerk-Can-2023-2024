@@ -14,25 +14,34 @@
         
     </head>
 <body>
-    <div class="header">
+<div class="header">
         <div class="logo">Pita Pitstop</div>
         
         <div class="Navbar">
-            <a href="index.html">Home</a>
-            <a href="#NaarMenu">Menu</a> <!--Bij drukken pagina scrollt naar beneden, bovenaan staat een foto-->
-            <a href="#">Over Ons</a>
-            <a href="#">Contact</a>
-            <a href="#">Bestellen</a>
-            <a href="#">Winkelwagen</a>
-            <a href="login.php">Login/Sign Up</a>
+            <a href="index.php">Home</a>
+            <a href="#NaarMenu">Menu</a> 
+            <a href="About.php">Over Ons</a>
+            <a href="Contact.php">Contact</a>
+            <a href="Winkelwagen.php">Winkelwagen</a>
+            <a href="signupForm.php">SignUp</a>
         </div>
+
         <div class="hamburger-menu">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
     </div>
-	
+
+    <!-- Na verkleinen dit terug zichtbaar maken -->
+    <div class="Navbar-Klein">
+        <a href="index.php">Home</a>
+        <a href="#NaarMenu">Menu</a> 
+        <a href="About.php">Over Ons</a>
+        <a href="Contact.php">Contact</a>
+        <a href="Winkelwagen.php">Winkelwagen</a>
+        <a href="signupForm.php">SignUp</a>
+    </div>
     
 </body>
 </html>

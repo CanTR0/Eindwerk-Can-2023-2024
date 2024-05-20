@@ -10,36 +10,9 @@
     <title>Pita Pitstop</title>
 </head>
 <body>
-    <div class="header">
-        <div class="logo">Pita Pitstop</div>
-        
-        <div class="Navbar">
-            <a href="index.html">Home</a>
-            <a href="#NaarMenu">Menu</a> <!-- Zou naar beneden moeten scrollen, weet niet waarom het niet doet..-->
-            <a href="About.html">Over Ons</a>
-            <a href="Contact.html">Contact</a>
-            <a href="#NaarMenu">Bestellen</a><!-- Zou naar beneden moeten scrollen, weet niet waarom het niet doet..-->
-            <a href="Winkelwagen.html">Winkelwagen</a>
-            <a href="signupForm.php">SignUp</a>
-        </div>
-
-        <div class="hamburger-menu">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-    </div>
-
-    <!-- Na verkleinen dit terug zichtbaar maken -->
-    <div class="Navbar-Klein">
-        <a href="index.html">Home</a>
-        <a href="#NaarMenu">Menu</a> <!-- Zou naar beneden moeten scrollen, weet niet waarom het niet doet..-->
-        <a href="About.html">Over Ons</a>
-        <a href="Contact.html">Contact</a>
-        <a href="#NaarMenu">Bestellen</a><!-- Zou naar beneden moeten scrollen, weet niet waarom het niet doet..-->
-        <a href="Winkelwagen.html">Winkelwagen</a>
-        <a href="signupForm.php">SignUp</a>
-    </div>
+<?php
+        include_once("navbar.php");
+    ?>  
 
     <div class="alles">
         <!--                                               Inhoud van Home                                    -->
@@ -99,25 +72,9 @@
     </div>
     
     <!--                                                           Footer                           -->
-    <div class="footer">
-        <div class="footer-section">
-            <h3>Over ons</h3>
-            <p>Wat meer informatie over ons bedrijf...</p>
-        </div>
-        <div class="footer-section">
-            <h3>Contact</h3>
-            <p>Contactgegevens...</p>
-        </div>
-        <div class="footer-section">
-            <h3>Social Media</h3>
-            <ul class="social-media-links">
-                <li><a href="https://icons.getbootstrap.com/icons/instagram/"><i class="bi bi-facebook"></i></a></li>
-                <li><a href="https://icons.getbootstrap.com/icons/instagram/"><i class="bi bi-twitter"></i></a></li>
-                <li><a href="https://icons.getbootstrap.com/icons/instagram/"><i class="bi bi-instagram"></i></a></li>
-            </ul>
-        </div>
-    </div>    
-      
+    <?php
+        include("footer.php");
+    ?> 
     
 <!--                                                               Javascript voor het veranderen van broodje                 -->
       

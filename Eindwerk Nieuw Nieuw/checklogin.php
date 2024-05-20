@@ -1,8 +1,10 @@
 <?php
 include_once("connection.php");
 $result=0;
-$user = htmlspecialchars($_POST['username']);
-$pass = htmlspecialchars($_POST['password']);
+// $user = htmlspecialchars($_POST['username']);
+// $pass = htmlspecialchars($_POST['password']);
+$user =$_POST['username'];
+$pass =$_POST['password'];
 
 // $passmd5=md5($pass);
 
