@@ -197,6 +197,7 @@ body {
     .Navbar {
         display: none; /* Verberg het menu */
     }
+
     .Navbar-Klein{
         display: flex;
     }

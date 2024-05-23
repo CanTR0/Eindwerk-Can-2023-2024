@@ -19,7 +19,7 @@
         
         <div class="Navbar">
             <a href="index.php">Home</a>
-            <a href="#NaarMenu">Menu</a> 
+            <a href="index.php#NaarMenu">Menu</a> 
             <a href="About.php">Over Ons</a>
             <a href="Contact.php">Contact</a>
             <a href="Winkelwagen.php">Winkelwagen</a>

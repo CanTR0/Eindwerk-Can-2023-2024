@@ -10,6 +10,7 @@
     <title>Pita Pitstop</title>
 </head>
 <body>
+    <!-- /* LOGO TOEVOEGEN */ -->
 <?php
         include_once("navbar.php");
     ?>  
