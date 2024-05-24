@@ -27,16 +27,15 @@ if (isset($_SESSION["user"]))
         <form class="form-container form-inline" action="checklogin.php" method="post" autocomplete="off">
             <div class="form-group">
                 <label for="InputName">Gebruikersnaam</label>
-                <span class="glyphicon glyphicon-user"></span>
+                <i class="bi bi-person"></i>
                 <input type="text" name="username" id="username" class="form-control" required>                                    
             </div>
             <div class="form-group">
                 <label for="InputPassword1">Password</label>
-                <span class="glyphicon glyphicon-lock"></span>
+                <i class="bi bi-lock-fill"></i>
                 <input type="text" name="password" id="password" class="form-control" required>                                    
             </div>
-            <span class="glyphicon glyphicon-user"></span>
-            <br>
+            
             <input class="btn btn-primary" type="submit" value="SUBMIT" alt="person">
             <div class="form-footer">
                 <p>Heb je nog geen account? <a href="signupForm.php">Sign Up</a></p>
@@ -48,7 +47,8 @@ if (isset($_SESSION["user"]))
         </div>
 
 
-    <img src="img/log-in.png" alt="" style="background-color: white; display: block; margin: 0 auto; height: 150px;">
+        <!-- voeg foto toe.. -->
+    <img src="img/nizd" alt="" style="background-color: white; display: block; margin: 0 auto; height: 150px;">
     
     <br><br>
     <?php 

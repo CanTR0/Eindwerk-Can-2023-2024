@@ -2,9 +2,9 @@
 
 include_once("connection.php");
 $result=0;
-$user = $_POST['username'];
-$pass1 = $_POST['password1'];
-$pass2 = $_POST['password2'];
+$user = htmlspecialchars($_POST['username']);
+$pass1 = htmlspecialchars($_POST['password1']);
+$pass2 = htmlspecialchars($_POST['password2']);
 
 
 if ($pass1!=$pass2) {

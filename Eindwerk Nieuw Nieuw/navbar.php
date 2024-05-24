@@ -23,7 +23,7 @@
             <a href="About.php">Over Ons</a>
             <a href="Contact.php">Contact</a>
             <a href="Winkelwagen.php">Winkelwagen</a>
-            <a href="signupForm.php">SignUp</a>
+            <a href="signupForm.php"><i class="bi bi-person"></i></a>
         </div>
 
         <div class="hamburger-menu">
