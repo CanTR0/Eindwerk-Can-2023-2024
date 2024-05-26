@@ -29,21 +29,20 @@ if (isset($_SESSION["user"]))
         <form class="form-container form-inline" action="signup.php" method="post" autocomplete="off">
             <div class="form-group">
                 <label for="InputName">Gebruikersnaam</label>
-                <span class="glyphicon glyphicon-user"></span>
+                <i class="bi bi-person"></i>
                 <input type="text" name="username" id="username" class="form-control" required>                                    
             </div>
             <div class="form-group">
                 <label for="InputPassword1">Password</label>
-                <span class="glyphicon glyphicon-lock"></span>
+                <i class="bi bi-lock-fill"></i>
                 <input type="text" name="password1" id="password1" class="form-control" required>                                    
             </div>
             <div class="form-group">
                 <label for="InputPassword2">Password (herhaal)</label>
-                <span class="glyphicon glyphicon-lock"></span>
+                <i class="bi bi-lock-fill"></i>
                 <input type="text" name="password2" id="password2" class="form-control" required>                                    
             </div>
             <div class="form-group">
-                <span class="glyphicon glyphicon-user"></span>
                 <br>
                 <input class="btn btn-primary" type="submit" value="SUBMIT" alt="person">
             </div>
