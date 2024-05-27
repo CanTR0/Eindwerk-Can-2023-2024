@@ -19,7 +19,7 @@ if (isset($_SESSION["user"]))
     <?php
         include_once("navbar.php");
     ?>       
-    
+    <br><br><br><br><br>
         <div class="row">
             <h1 style="text-align: center;">Sign Up</h1>
         </div>
@@ -43,7 +43,7 @@ if (isset($_SESSION["user"]))
                 <input type="text" name="password2" id="password2" class="form-control" required>                                    
             </div>
             <div class="form-group">
-                <br>
+                <br><br>
                 <input class="btn btn-primary" type="submit" value="SUBMIT" alt="person">
             </div>
             <div class="form-footer">

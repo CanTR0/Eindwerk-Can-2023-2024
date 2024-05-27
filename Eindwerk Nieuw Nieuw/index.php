@@ -11,6 +11,7 @@
 </head>
 <body>
     <!-- /* LOGO TOEVOEGEN */ -->
+    
 <?php
         include_once("navbar.php");
     ?>  
@@ -31,6 +32,8 @@
                     <div class="menu-item-content">
                         <h3>Frietjes</h3>
                         <p>Krokante frietjes geserveerd met een saus naar keuze. Heerlijk knapperig en goudbruin gebakken, bereid van verse aardappelen.</p>
+                        <br>
+                        <h3>Prijs: 3 euro</h3>
                     </div>
                     <div class="menu-item-image">
                         <img src="Afbeeldingen/frietjes.jpg" alt="Frietjes">
@@ -41,6 +44,8 @@
                     <div class="menu-item-content">
                         <h3>Menu's</h3>
                         <p>Kies uit onze diverse menu's, inclusief frietjes en een drankje. Onze menu's bieden een combinatie van smaken en keuzes die perfect zijn voor elke trek.</p>
+                        <br>
+                        <h3>Prijs: 10 euro</h3>
                     </div>
                     <div class="menu-item-image">
                         <img src="Afbeeldingen/menu.jpg" alt="Menu's">
@@ -51,10 +56,12 @@
                     <div class="menu-item-content">
                         <h3>Broodje Kip</h3>
                         <p>Heerlijk vers bereid broodje met sappige kip, knapperige sla, plakjes tomaat en een vleugje mayonaise. Een smakelijke traktatie voor elk moment van de dag.</p>
+                        <br>
+                        <h3>Prijs: 7 euro</h3>
                         <br><button onclick="changeBroodje()">Klik voor Broodje Vlees</button>
                     </div>
                     <div class="menu-item-image">
-                        <img src="Afbeeldingen/broodje_kip.jpg" alt="Broodje Kip">
+                        <img src="Afbeeldingen/broodjekip.jpg" alt="Broodje Kip">
                     </div>
                     <button class="buy-button">Koop</button>
                 </div>
@@ -62,6 +69,8 @@
                     <div class="menu-item-content">
                         <h3>Nuggets</h3>
                         <p>Knapperige nuggets, perfect als snack of als onderdeel van een menu. Gemaakt van hoogwaardige ingrediënten en gebakken tot in de perfectie, elke hap is een genot voor de smaakpapillen.</p>
+                        <br>
+                        <h3>Prijs: 3 euro</h3>
                     </div>
                     <div class="menu-item-image">
                         <img src="Afbeeldingen/nuggets.png" alt="Nuggets">
@@ -86,20 +95,20 @@
 
       <script>
     function changeBroodje() {
-        const broodjeElement = document.getElementById('broodjeItem');
-        const imgElement = broodjeElement.querySelector('img');
-        const buttonElement = broodjeElement.querySelector('button');
+        const broodje = document.getElementById('broodjeItem');
+        const imgElement = broodje.querySelector('img');
+        const buttonElement = broodje.querySelector('button');
 
         if (imgElement.src.endsWith('kip.jpg')) {
             imgElement.src = 'Afbeeldingen/broodje_vlees.jpg';
-            broodjeElement.querySelector('h3').innerText = 'Broodje Vlees';
-            broodjeElement.querySelector('p').innerText = 'Heerlijk vers bereid broodje met mals vlees. ' +
+            broodje.querySelector('h3').innerText = 'Broodje Vlees';
+            broodje.querySelector('p').innerText = 'Heerlijk vers bereid broodje met mals vlees. ' +
                 'Knapperige sla, plakjes tomaat en een vleugje mayonaise. Een smakelijke traktatie voor elk moment van de dag.';
             buttonElement.innerText = 'Liever Broodje Kip?';
         } else {
-            imgElement.src = 'Afbeeldingen/broodje_kip.jpg';
-            broodjeElement.querySelector('h3').innerText = 'Broodje Kip';
-            broodjeElement.querySelector('p').innerText = 'Heerlijk vers bereid broodje met sappige kip, ' +
+            imgElement.src = 'Afbeeldingen/broodjekip.jpg';
+            broodje.querySelector('h3').innerText = 'Broodje Kip';
+            broodje.querySelector('p').innerText = 'Heerlijk vers bereid broodje met sappige kip, ' +
                 'knapperige sla, plakjes tomaat en een vleugje mayonaise. Een smakelijke traktatie voor elk moment van de dag.';
             buttonElement.innerText = 'Toch Broodje Vlees?';
         }

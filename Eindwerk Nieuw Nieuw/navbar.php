@@ -19,7 +19,11 @@
         
         <div class="Navbar">
             <a href="index.php">Home</a>
-            <a href="index.php#NaarMenu">Menu</a> 
+
+            <a href="addPage.php">Nieuwe toevoegen</a>
+            <a href="Producten.php"> Menu</a>
+            
+             
             <a href="About.php">Over Ons</a>
             <a href="Contact.php">Contact</a>
             <a href="Winkelwagen.php">Winkelwagen</a>
@@ -36,7 +40,11 @@
     <!-- Na verkleinen dit terug zichtbaar maken -->
     <div class="Navbar-Klein">
         <a href="index.php">Home</a>
-        <a href="#NaarMenu">Menu</a> 
+
+        <a href="addPage.php">Nieuwe toevoegen</a>
+        <a href="Producten.php"> Producten</a>
+        
+          
         <a href="About.php">Over Ons</a>
         <a href="Contact.php">Contact</a>
         <a href="Winkelwagen.php">Winkelwagen</a>
