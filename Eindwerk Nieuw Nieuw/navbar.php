@@ -1,3 +1,12 @@
+<?php
+$user="Gast";
+if (isset($_SESSION["user"]))
+{
+   $user=$_SESSION["user"];
+}
+ ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -19,16 +28,19 @@
         
         <div class="Navbar">
             <a href="index.php">Home</a>
-
-            <a href="addPage.php">Nieuwe toevoegen</a>
+        
+            <?php if ($user=='admin') print '<a href="addPage.php">Nieuwe product</a>' ?>
             <a href="Producten.php"> Menu</a>
             
              
             <a href="About.php">Over Ons</a>
             <a href="Contact.php">Contact</a>
             <a href="Winkelwagen.php">Winkelwagen</a>
-            <a href="signupForm.php"><i class="bi bi-person"></i></a>
-            <?php if ($user=='Admin') print '<a class="nav-link" href="addPage.php">Aanvallers toevoegen</a></li>' ?>
+            
+            <?php if ($user == 'Gast') print '<a href="login.php"><i class="bi bi-person"></i>Login</a>'; ?>
+            <a href="logout.php" style="text-decoration: none;"><?php if ($user!='Gast') print '<i class="bi bi-person"></i>Logout</a></li>';?>
+            
+           
         </div>
 
         <div class="hamburger-menu">
@@ -42,8 +54,8 @@
     <div class="Navbar-Klein">
         <a href="index.php">Home</a>
 
-        <a href="addPage.php">Nieuwe toevoegen</a>
-        <a href="Producten.php"> Producten</a>
+        <?php if ($user=='admin') print '<a href="addPage.php">Nieuwe product</a>' ?>
+        <a href="Producten.php"> Menu</a>
         
           
         <a href="About.php">Over Ons</a>

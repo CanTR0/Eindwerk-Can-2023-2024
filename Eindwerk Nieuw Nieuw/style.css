@@ -97,8 +97,10 @@ body {
     padding: 20px;
     margin-bottom: 100px;
     margin-left: 3px;
+
 }
 .content-home h1{
+    color: black;
     text-align: center;
 }
 .content-home .foto {
@@ -114,14 +116,14 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white; /* Adjust color based on your design */
+    color: white; 
     text-align: center;
-    font-size: 2em; /* Adjust font size as needed */
+    font-size: 2em;
     width: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
-
-/* -------------------------------------------------------------------Inhoud Menu */
+/* -------------------------------------------------------------------Inhoud Home Menu */
 .content-menu {
     padding: 20px;
     margin-bottom: 100px;
@@ -137,7 +139,6 @@ body {
 .menu-items {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: space-between; 
 }
 

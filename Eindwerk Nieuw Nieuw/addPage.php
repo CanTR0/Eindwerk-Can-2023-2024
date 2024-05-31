@@ -30,9 +30,10 @@
     
 <div class="container">
     <br><br><br>
+    <!-- Form om producten toe te voegen -->
     <h2>Product toevoegen</h2>
     <div class="add">
-        <form action="add.php" method="post" enctype="multipart/form-data">
+        <form action="add2.php" method="post" enctype="multipart/form-data">
             <table >
              
                 <tr>
@@ -59,6 +60,8 @@
             </table>
         </form>
     </div>
+
+    <!-- je producten -->
     <h2>Producten</h2>
         <table id="producten">
                 <?php
@@ -79,25 +82,16 @@
                     <div class="menu-item-image">
                     <img src="Afbeeldingen/<?php echo $row['afbeelding'];?>" >
                     </div>
-                    <button class="buy-button" id="del" onclick="location.href='del.php?id=<?php echo $row['ID']?>'">DELETE</button>
+                    <button id="del" onclick="location.href='del.php?id=<?php echo $row['ID']?>'">DELETE</button>
                 </div>
             </div>
         </div>
-                <tr>
-                    <td><?php echo $row['ID']; ?></td></p>
-                    <td><?php echo $row['naam']; ?></td>
-                    <td><?php echo $row['omschrijving']; ?></td>
-                    <td><?php echo $row['prijs']; ?></td>
-                    <td></td>
-                    <td>
-                </tr>
-
                 <?php
                     };
                     $conn->close();
                 ?>
         </table>
-        </div>
+</div>
         <br>
         <!------------------------------ FOOTER ------------------------------>
    

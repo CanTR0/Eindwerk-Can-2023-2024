@@ -12,6 +12,8 @@ if (isset($_SESSION["user"]))
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Afbeeldingen/icoon.ico" type="image/x-icon">
     <title>PitaPitstop Login</title>
 </head>
 <body>
