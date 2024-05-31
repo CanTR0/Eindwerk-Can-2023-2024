@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>R6 Aanvallers</title>
+        <title>Pitstop</title>
     
         <!-- CSS only -->
         <link rel="stylesheet" href="style.css">
@@ -28,6 +28,7 @@
             <a href="Contact.php">Contact</a>
             <a href="Winkelwagen.php">Winkelwagen</a>
             <a href="signupForm.php"><i class="bi bi-person"></i></a>
+            <?php if ($user=='Admin') print '<a class="nav-link" href="addPage.php">Aanvallers toevoegen</a></li>' ?>
         </div>
 
         <div class="hamburger-menu">
@@ -48,7 +49,7 @@
         <a href="About.php">Over Ons</a>
         <a href="Contact.php">Contact</a>
         <a href="Winkelwagen.php">Winkelwagen</a>
-        <a href="signupForm.php">SignUp</a>
+        <a href="signupForm.php"><i class="bi bi-person"></i></a>
     </div>
     
 </body>

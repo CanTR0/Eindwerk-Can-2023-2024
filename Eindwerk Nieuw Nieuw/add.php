@@ -7,7 +7,7 @@
     $afbeelding = $_POST['afbeelding'];
 
     //$sql = "INSERT INTO `tblproducten` (`ID`, `naam`, `omschrijving`, `prijs`, `afbeelding`) VALUES (NULL, '$naam', '$omschrijving', '$prijs', '$afbeelding')";
-    $sql = "INSERT INTO `tblproducten` (`ID`, `naam`, `omschrijving`, `prijs`, `afbeelding`) VALUES (NULL, 'Pitta', 'test', '10', '')";
+    $sql = "INSERT INTO `tblproducten` (`ID`, `naam`, `omschrijving`, `prijs`, `afbeelding`) VALUES (NULL, 'naam', 'test', 'prijs', '')";
 
 
 

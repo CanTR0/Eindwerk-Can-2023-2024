@@ -20,8 +20,11 @@
         <!--                                               Inhoud van Home                                    -->
     
         <div class="content-home">
-            <h1>Welkom bij Pita Pitstop</h1>
-        </div>
+    <div class="foto">
+        <div class="text"><h1>Welkom bij Pita Pitstop</h1></div>
+    </div>
+</div>
+
 
         
         <!--                                               Inhoud van Menu                                    -->

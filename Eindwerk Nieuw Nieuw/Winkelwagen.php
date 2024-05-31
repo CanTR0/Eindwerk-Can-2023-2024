@@ -27,7 +27,7 @@ include 'sessionCheckUser.php';
 
         </div>
         <?php
-        if ($user!="Login") {
+        if ($user!="Gast") {
             
             if (isset($_GET["productID"])) 
             {
@@ -48,7 +48,7 @@ include 'sessionCheckUser.php';
         <h3>Winkelmandje van: <b><?php echo $user; ?></b></h3><br><br>
         
         <?php
-        if ($user!="Login")
+        if ($user!="Gast")
          {
             $sql = "SELECT * FROM `tblwinkelmandje` WHERE klantID='$klantID'";
             $totaal = 0;

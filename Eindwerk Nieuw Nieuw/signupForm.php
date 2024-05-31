@@ -1,6 +1,6 @@
 
 <?php
-$user="Login";
+$user="Gast";
 session_start();
 if (isset($_SESSION["user"]))
 {

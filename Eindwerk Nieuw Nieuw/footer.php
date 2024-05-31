@@ -13,6 +13,7 @@
     </head>
 <body>
 <div class="footer">
+    
         <div class="footer-section">
             <h3>Over ons</h3>
             <p>Wat meer informatie over ons bedrijf...</p>
