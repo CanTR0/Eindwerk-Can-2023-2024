@@ -74,7 +74,7 @@ include 'sessionCheckUser.php';
                     <div class="menu-item-image">
                     <img id="imgSchoenen" alt="schoenen" src="Afbeeldingen/<?php echo $row2['afbeelding'];?>">
                     </div>
-                    <button class="buy-button" id="del" onclick="location.href='del.php?id=<?php echo $row['ID']?>'">DELETE</button>
+                    <button class="buy-button" id="del" onclick="location.href='Winkelwagen.php?productID=<?php echo $row['productID']?>'">DELETE</button>
                 </div>
             </div>
         </div>
@@ -86,7 +86,7 @@ include 'sessionCheckUser.php';
             
             <?php $totaal += $row2['prijs']; ?>
             <b>Aantal: </b><?php echo $row['aantal']; ?>
-            <a href="delete/Winkelwagen.php?productID=<?php echo $row['productID']; ?>">Verwijder</a>
+            <a href="Winkelwagen.php?productID=<?php echo $row['productID']; ?>">Verwijder</a>
             <?php }
             }
             $conn->close(); ?>
