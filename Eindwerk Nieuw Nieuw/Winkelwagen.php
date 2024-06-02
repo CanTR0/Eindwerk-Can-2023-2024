@@ -7,18 +7,14 @@ include 'sessionCheckUser.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="Afbeeldingen/icoon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Afbeeldingen/icoon.ico" type="image/x-icon">
     <title>Winkelwagen</title>
     
 </head>
 <body>
-    <style>
-        .producten{
-            margin-left: 1%;
-        }
-    </style>
-
 
     </style>
     <?php include "navbar.php"; ?>
@@ -56,7 +52,7 @@ include 'sessionCheckUser.php';
             $result = $conn->query($sql);
             while ($row = $result->fetch_assoc()) {
             $product = $row['productID'];
-            echo "Product: " . $row['productID'];
+            
             $sql2 = "SELECT * FROM `tblproducten` WHERE id='$product'";
             $result2 = $conn->query($sql2);
             while ($row2 = $result2->fetch_assoc()) { ?>
@@ -70,15 +66,16 @@ include 'sessionCheckUser.php';
                         <p><b>Omschrijving: </b><?php echo $row2['omschrijving']; ?></p>
                         <br>
                         <p class="prijs"><b>Prijs: </b>€ <?php echo $row2['prijs']; ?></p>
+                        <?php echo "Product: " . $row['productID']; ?>
                     </div>
                     <div class="menu-item-image">
-                    <img id="imgSchoenen" alt="schoenen" src="Afbeeldingen/<?php echo $row2['afbeelding'];?>">
-                    </div>
-                    <button class="buy-button" id="del" onclick="location.href='Winkelwagen.php?productID=<?php echo $row['productID']?>'">DELETE</button>
-                </div>
+                    <img id="imgSchoenen" alt="eten" src="Afbeeldingen/<?php echo $row2['afbeelding'];?>">
+                    
             </div>
         </div>
-
+        </div>
+        <button  id="del" onclick="location.href='deleteWinkelmandje.php?productID=<?php echo $row['productID']?>'">Delete</button>
+        </div>
             
             
 
@@ -86,7 +83,7 @@ include 'sessionCheckUser.php';
             
             <?php $totaal += $row2['prijs']; ?>
             <b>Aantal: </b><?php echo $row['aantal']; ?>
-            <a href="Winkelwagen.php?productID=<?php echo $row['productID']; ?>">Verwijder</a>
+            <a href="del.php?productID=<?php echo $row['productID']; ?>">Verwijder</a>
             <?php }
             }
             $conn->close(); ?>
@@ -101,6 +98,7 @@ include 'sessionCheckUser.php';
                 print"Je moet eerst inloggen om een winkelmandje te gerbuiken.";
             }
             ?>
+        
         
         
     </div>

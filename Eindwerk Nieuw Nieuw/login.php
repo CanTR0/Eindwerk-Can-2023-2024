@@ -17,26 +17,40 @@ if (isset($_SESSION["user"]))
     <title>PitaPitstop Login</title>
 </head>
 <body>
+    <style>
+        .row h1{
+            text-align:center;   
+        }
+    </style>
     
     <?php
     include_once("navbar.php");
     ?> 
     <br><br><br><br><br>
     <div class="row">
-            <h1 style="text-align: center;">Log in</h1>
-        </div>
+        <h1>
+            <?php
+            // Controleer of de gebruiker ingelogd is
+            if ($user != 'Gast') {
+                echo "Welkom, $user";
+            } else {
+                echo "Log in";
+            }?> 
+        </h1>
+    </div>
     <div class="row justify-content-center">
     <div class="col-12 col-sm-8 col-md-6">
+
         <form class="form-container form-inline" action="checklogin.php" method="post" autocomplete="off">
             <div class="form-group">
                 <label for="InputName">Gebruikersnaam</label>
-                <i class="bi bi-person"></i>
+                <i class="bi bi-person"></i><br>
                 <input type="text" name="username" id="username" class="form-control" required>                                    
             </div>
             <div class="form-group">
                 <label for="InputPassword1">Password</label>
-                <i class="bi bi-lock-fill"></i>
-                <input type="text" name="password" id="password" class="form-control" required>                                    
+                <i class="bi bi-lock-fill"></i><br>
+                <input type="password" name="password" id="password" class="form-control" required>                                    
             </div>
             <br><br><br>
             <input class="btn btn-primary" type="submit" value="SUBMIT" alt="person">
@@ -46,6 +60,7 @@ if (isset($_SESSION["user"]))
                 <p id="fout"><?php if (isset($_GET["melding"])) { print $melding;}?></p>
             </div>
         </form>
+
         </div>
         </div>
 

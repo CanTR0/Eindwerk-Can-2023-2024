@@ -1,3 +1,7 @@
+<?php
+// include 'connection.php';
+include 'sessionCheckUser.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
     <!-- Open in default browser vs Open in usbWebserver browser, vragen aan leerkracht op school. -->
@@ -42,7 +46,7 @@
                     <div class="menu-item-image">
                         <img src="Afbeeldingen/frietjes.jpg" alt="Frietjes">
                     </div>
-                    <button class="buy-button">Koop</button>
+                    <button class="buy-button"><a href="Producten.php">Koop</a></button>
                 </div>
                 <div class="menu-item">
                     <div class="menu-item-content">
@@ -54,7 +58,7 @@
                     <div class="menu-item-image">
                         <img src="Afbeeldingen/menu.jpg" alt="Menu's">
                     </div>
-                    <button class="buy-button">Koop</button>
+                    <button class="buy-button"><a href="Producten.php">Koop</a></button>
                 </div>
                 <div class="menu-item" id="broodjeItem">
                     <div class="menu-item-content">
@@ -67,7 +71,7 @@
                     <div class="menu-item-image">
                         <img src="Afbeeldingen/broodjekip.jpg" alt="Broodje Kip">
                     </div>
-                    <button class="buy-button">Koop</button>
+                    <button class="buy-button"><a href="Producten.php">Koop</a></button>
                 </div>
                 <div class="menu-item">
                     <div class="menu-item-content">
@@ -79,7 +83,7 @@
                     <div class="menu-item-image">
                         <img src="Afbeeldingen/nuggets.png" alt="Nuggets">
                     </div>
-                    <button class="buy-button">Koop</button>
+                    <button class="buy-button"><a href="Producten.php">Koop</a></button>
                 </div>
             </div>
         </div>

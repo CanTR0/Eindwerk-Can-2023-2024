@@ -1,3 +1,7 @@
+<?php
+// include 'connection.php';
+include 'sessionCheckUser.php';
+?>
 <?php 
     if(isset($_GET['melding'])){
         $melding=$_GET['melding'];
@@ -14,9 +18,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Producten toevoegen</title>
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Afbeeldingen/icoon.ico" type="image/x-icon">
     
     <!-- <link rel="shortcut icon" href="img/Icon.png" type="image/png"> -->
     <link rel="shortcut icon" href="Afbeeldingen/icoon.ico" type="image/x-icon">
@@ -54,7 +59,7 @@
 
                 <tr>
                     <td></td>
-                    <td><input type="submit" value="Toevoegen"></td>
+                    <td><input type="submit" value="Toevoegen"></td> 
                 </tr>
                
             </table>
@@ -62,7 +67,7 @@
     </div>
 
     <!-- je producten -->
-    <h2>Producten</h2>
+    <br><br><br><h2>Producten</h2>
         <table id="producten">
                 <?php
                 include 'connection.php';

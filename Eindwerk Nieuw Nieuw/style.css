@@ -161,6 +161,10 @@ body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
+button a{
+    text-decoration: none;
+    color: whitesmoke;
+}
 
 /* ------------------------------------------------- afbeelding */
 .menu-item-image img {
@@ -168,9 +172,143 @@ body {
     height: auto;
     object-fit: cover;
 }
+/* ------------------------------------------------------------ Inhoud About Page */
+div.About-Inhoud{
+    padding-left: 1%;
+    display:flex;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+div.About-Inhoud h1.About-Title {
+    /* background-color: black; */
+    padding: 5%;
+    text-align: center;
+
+} 
+div.Tekst-Info{
+    padding-bottom: 2%;
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+div.Tekst-Info h2{
+    color: black;
+    font-size: 30px;
+    text-align:left;
+    width: 36%;
+    border-radius: 10px;
+    /* padding-top: 100px;
+    padding-left: 150px; */
+}
+div.Tekst-Info h2:hover{
+    background-color: black;
+    color: #bfbee7;
+}
+div.Tekst-Info p{
+    color: black;
+    padding-left: 1% ;
+    /* margin-bottom: 100px; */
+    font-size: 20px;
+    border-radius: 10px;
+} 
+div.Tekst-Info p:hover{
+    background-color: rgba(0, 0, 0, 0.753);
+    color: #bfbee7c3;
+}
+/* -------------------------------------------------Pagina producten (menu) */
+main.container{
+    padding-left:40%;
+    width:100%;
+}
+/* __________________________________________ Producten */
+
+.producten button, .product button {
+    background-color: #3a62b7;
+    border-radius: 10px;
+    border: none;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.producten button:hover, .product button:hover{
+    background-color:  #3a40b7;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 1px solid black;
+}
+.producten{
+    padding-left:40%;
+    width:100%;
+}
+a.buy-button{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.product{
+    padding-top: 3%;
+}
+
+/* ------------------------------------------------------------ Contact */
+form.contact {
+    margin: 4% auto;
+    margin-top: 11%;
+    width: 60%;
+    padding: 15%;
+    height: 60%;;
+    border: solid #292929;
+    border-radius: 30px;
+    margin-bottom: 15%
+}
+  form.contact h1.from{
+    color: black;
+}
+h1.contacth1{
+    padding-top: 3%;
+    text-align: center;
+}
+  
+form.contact label {
+    display: inline-block;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+
+}
+  
+form.contact input[type="text"], form.contact input[type="email"], textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    background-color: white;
+    color: black;
+}
+form.contact input:hover{
+    background-color: #292929;
+    color: white;
+}
+form.contact textarea:hover{
+    background-color: #292929;
+    color: white;
+}
+  
+form.contact input[type="submit"] {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+form.contact input[type="submit"]:hover{
+    color: #333;
+    background-color: #fff;
+    border: #292929 solid;
+}
+  
 
 /* ------------------------------------------------------------ Footer */
 .footer {
+    margin-top: 2%;
     background-color: #3a62b7; 
     color: #fff;
     padding: 20px;
@@ -178,11 +316,25 @@ body {
     width: 100%;
     position: relative; /* Relatieve positionering */
     display: flex;
+    margin-bottom: 0;
+    bottom: 0;
 }
-
+.ondertekst{
+    text-align: left;
+    padding-left: 3%;
+}
+.ondertekst li{
+    padding-top: 1%;
+}
 
 .footer-section {
     flex: 1;
+    border-right: 1px solid black;
+}
+.footer-section a {
+    list-style-type: none;
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 .footer-section h3 {
@@ -211,7 +363,52 @@ body {
     color: black;
     text-decoration: none;
 }
+/* ----------------------------------------------LOGIN */
 
+form.form-container{
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 10px;
+    width: 70%;
+    margin: 4% auto;
+    border: solid #292929;
+    margin-bottom: 4%;
+    margin-top: 2%;
+}
+
+form.form-container label {
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+
+}
+  
+form.form-container input[type="text"], form.form-container input[type="password"],
+  textarea {
+    width: 20%;
+    padding: 5px;
+    margin-top: 5px;
+    background-color: white;
+    color: black;
+}
+form.form-container input:hover, form.form-container textarea:hover{
+    background-color: #292929;
+    color: white;
+}
+form.form-container input[type="submit"] {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 2px #292929;
+}
+form.form-container input[type="submit"]:hover{
+    color: #333;
+    background-color: #fff;
+    border: 2px #292929;
+}
 /* -----------------------------------------------------Responsive maken */
 @media (max-width: 768px) {
     .Navbar {
@@ -234,6 +431,14 @@ body {
         width: 100%;
     }
     .footer{
-        display: block;
+        display: none;
+    }
+    main.container{
+        padding-left:5%;
+        width:90%;
+    }
+    .producten{
+        padding-left:5%;
+        width:90%;
     }
 }

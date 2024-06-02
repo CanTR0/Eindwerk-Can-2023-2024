@@ -11,7 +11,7 @@
         
         if ($conn->query($sql) === TRUE)
         {
-            header('Location: winkelmandje.php');
+            header('Location: winkelwagen.php');
         }
         else
         {

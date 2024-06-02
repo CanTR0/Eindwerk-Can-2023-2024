@@ -12,7 +12,9 @@ if (isset($_SESSION["user"]))
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="Afbeeldingen/icoon.ico" type="image/x-icon">
     <title>PitaPitstop Signup</title>  
 </head>
@@ -31,18 +33,18 @@ if (isset($_SESSION["user"]))
         <form class="form-container form-inline" action="signup.php" method="post" autocomplete="off">
             <div class="form-group">
                 <label for="InputName">Gebruikersnaam</label>
-                <i class="bi bi-person"></i>
+                <i class="bi bi-person"></i><br>
                 <input type="text" name="username" id="username" class="form-control" required>                                    
             </div>
             <div class="form-group">
                 <label for="InputPassword1">Password</label>
-                <i class="bi bi-lock-fill"></i>
-                <input type="text" name="password1" id="password1" class="form-control" required>                                    
+                <i class="bi bi-lock-fill"></i><br>
+                <input type="password" name="password1" id="password1" class="form-control" required >                                    
             </div>
             <div class="form-group">
                 <label for="InputPassword2">Password (herhaal)</label>
-                <i class="bi bi-lock-fill"></i>
-                <input type="text" name="password2" id="password2" class="form-control" required>                                    
+                <i class="bi bi-lock-fill"></i><br>
+                <input type="password" name="password2" id="password2" class="form-control" required >                                    
             </div>
             <div class="form-group">
                 <br><br>
