@@ -6,7 +6,7 @@
     if(isset($_GET['productID'])){
         include 'connection.php';
         $id = $_GET['productID'];
-        print "id=". $id;
+        print "ID=". $id;
         $sql = "DELETE FROM `tblwinkelmandje` WHERE productID = '$id' AND klantID='$klantID'";
         
         if ($conn->query($sql) === TRUE)
