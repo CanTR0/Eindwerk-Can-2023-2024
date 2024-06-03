@@ -16,16 +16,13 @@ include 'sessionCheckUser.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Producten toevoegen</title>
-    <!-- CSS only -->
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="Afbeeldingen/icoon.ico" type="image/x-icon">
-    
-    <!-- <link rel="shortcut icon" href="img/Icon.png" type="image/png"> -->
-    <link rel="shortcut icon" href="Afbeeldingen/icoon.ico" type="image/x-icon">
-    
+    <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
+    <title>Producten toevoegen</title>
 </head>
 <body>
     
