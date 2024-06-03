@@ -2,7 +2,7 @@
     include 'connection.php';
     
     $naam = $_POST['naam'];
-    $omschrijving = $_POST['omschrijving'];
+    $omschrijving = htmlentities($_POST['omschrijving'], ENT_QUOTES);
     $prijs = $_POST['prijs'];
     $afbeelding = $_POST['afbeelding'];
     /*

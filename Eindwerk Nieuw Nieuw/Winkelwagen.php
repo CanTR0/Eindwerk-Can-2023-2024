@@ -83,7 +83,7 @@ include 'sessionCheckUser.php';
             
             <?php $totaal += $row2['prijs']; ?>
             <b>Aantal: </b><?php echo $row['aantal']; ?>
-            <a href="del.php?productID=<?php echo $row['productID']; ?>">Verwijder</a>
+            <!-- <a href="del.php?productID=<?php echo $row['productID']; ?>">Verwijder</a> -->
             <?php }
             }
             $conn->close(); ?>
