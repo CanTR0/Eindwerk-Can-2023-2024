@@ -18,7 +18,7 @@ if ($result->num_rows) {
     print "Welkom";
     $_SESSION["user"] = $user;
     $_SESSION["klantID"] = $row['klantID'];
-    header("Location: login.php?melding=Je bent aangemeld");
+    header("Location: index.php?melding=Je bent aangemeld");
 } else {
     header("Location: login.php?melding=Gebruikersnaam of paswoord is niet correct");
 }

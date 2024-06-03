@@ -11,6 +11,10 @@ include 'sessionCheckUser.php';
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="Afbeeldingen/icoon.ico" type="image/x-icon">
+    
+    <!-- css laten toepassen op elk pagina -->
+    <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
+    
     <title>Pita Pitstop</title>
 </head>
 <body>

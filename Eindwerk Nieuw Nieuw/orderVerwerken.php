@@ -11,7 +11,8 @@
             $productid=$row['productID'];
             $aantal=$row['aantal'];
             date_default_timezone_set("Europe/Brussels");
-            $datum=date("Y-m-d");
+            $datum = date("Y-mm-dd");
+
             $sqlInsert="INSERT INTO tblbestellingen (bestelID, datum, klantID, productID, aantal) VALUES (NULL, '$datum', '$klantID', '$productid', '$aantal' )";
 
         }
@@ -20,7 +21,7 @@
             $sqlDel = "DELETE FROM tblwinkelmandje WHERE klantID = '$klantID' ";
             if ($conn->query($sqlDel) === TRUE )
             {
-                header('Location: BedanktVoorAankoop.php?melding=Bedankt voor uw aankoop');
+                header('Location: index.php?melding=Bedankt voor uw aankoop');
 
             }
             else {

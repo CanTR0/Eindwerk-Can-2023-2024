@@ -18,7 +18,6 @@ include 'sessionCheckUser.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="Afbeeldingen/icoon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
@@ -64,7 +63,7 @@ include 'sessionCheckUser.php';
     </div>
 
     <!-- je producten -->
-    <br><br><br><h2>Producten</h2>
+    <br><br><br><h1 class="h1Toevoegen">Producten</h1>
         <table id="producten">
                 <?php
                 include 'connection.php';

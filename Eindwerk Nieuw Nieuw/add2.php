@@ -12,9 +12,9 @@
     print "afbeelding: ".$afbeelding;*/
 
 
-   $sql = "INSERT INTO `tblproducten` VALUES (NULL, '$naam', '$omschrijving', '$prijs','$afbeelding')";
+   $sql = "INSERT INTO tblproducten VALUES (NULL, '$naam', '$omschrijving', '$prijs','$afbeelding')";
   // print $sql;
-   // $sql = "INSERT INTO `tblproducten` (`ID`, `naam`, `omschrijving`, `prijs`, `afbeelding`) VALUES (NULL, 'naam', 'test', 'prijs', '')";
+   // $sql = "INSERT INTO `tblproducten` (`ID`, `naam`, `omschrijving`, `prijs`, `afbeelding`) VALUES (NULL, 'naam', 'test', 'prijs', 'afbeelding')";
 
 
 
